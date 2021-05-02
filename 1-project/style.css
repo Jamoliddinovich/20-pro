@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-image: linear-gradient(rgba(10, 233, 110, 0.452),rgba(130, 248, 232, 0.575));
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+.container h2{
+    text-align: center;
+    font-size: 25px;
+    padding: 20px;
+}
+.box{
+    background-color: rgb(244, 245, 247);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 30px 2px rgb(196, 196, 197);
+}
+.control-form{
+    padding: 10px 0;
+    font-size: 18px;
+    min-height: 40px;
+}
+.info{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.control-form input{
+    background-color:white;
+    font-size: 15px;
+    padding: 8px 2px;
+    border: 3px solid rgb(180, 180, 180);
+    border-radius: 10px;
+    outline: none;
+}
+.control-form.success input{
+  border-color: rgb(97, 226, 194);
+}
+.control-form.error input{
+    border-color: rgb(247, 86, 46);
+  }
+  .control-form.error p{
+      visibility: visible;
+    color: rgb(247, 86, 46);
+  }
+  .control-form p{
+      visibility: hidden;
+      padding: 10px 0;
+      font-size: 14px;
+  }
+  .btn{
+      text-align: center;
+  }
+.submit{
+   width: 90%;
+   height: 40px;
+   background-color: rgba(132, 221, 43, 0.856);
+   border: 3px solid rgb(144, 228, 49);
+   outline: none;
+   border-radius: 50px;
+   font-size: 25px;
+   transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.submit:hover{
+    background-color: rgb(90, 224, 37);
+
+}
